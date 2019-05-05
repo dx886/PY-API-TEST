@@ -4,6 +4,8 @@ import sys
 import unittest
 
 sys.path.append('./')
+sys.path.append('./')
+sys.path.append('./')
 print(sys.path)
 from python_study.zuoye.zuoye_22.common import contants
 

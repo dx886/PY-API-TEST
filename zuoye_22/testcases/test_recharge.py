@@ -3,11 +3,12 @@ import unittest
 
 from ddt import ddt, data
 
+from python_study.zuoye import DoMysql
 from python_study.zuoye.zuoye_22.common import contants
 from python_study.zuoye.zuoye_22.common import do_excel
-from python_study.zuoye.zuoye_22.common.do_mysql import DoMysql
 from python_study.zuoye.zuoye_22.common.http_request import HTTPRequest2
-import random
+
+
 @ddt
 class RechargeTest(unittest.TestCase):
     excel = do_excel.DoExcel(contants.case_file, 'recharge')

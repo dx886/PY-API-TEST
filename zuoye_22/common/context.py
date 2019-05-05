@@ -1,7 +1,10 @@
 
 import configparser
 import re
-from python_study.zuoye.zuoye_22.common.config import doconfig
+
+from python_study.zuoye import doconfig
+
+
 class Context:
     loan_id = None
 def replace(data):

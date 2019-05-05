@@ -1,6 +1,9 @@
 
 import requests
-from python_study.zuoye.zuoye_22.common.config import doconfig
+
+from python_study.zuoye import doconfig
+
+
 class HTTPRequest:
     def request(self, method, url, data=None, json=None, cookies=None):
         method = method.upper()  # 将method强制转成全大小

@@ -1,6 +1,9 @@
 
 import pymysql
-from python_study.zuoye.zuoye_22.common.config import doconfig
+
+from python_study.zuoye import doconfig
+
+
 class DoMysql:
     def __init__(self):
         # 读取配置文件,获取数据库连接信息

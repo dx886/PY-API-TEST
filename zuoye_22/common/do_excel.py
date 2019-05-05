@@ -1,6 +1,7 @@
 
 import openpyxl
-from python_study.zuoye.zuoye_22.common import http_request
+
+
 class Case:
     def __init__(self):
         self.case_id = None

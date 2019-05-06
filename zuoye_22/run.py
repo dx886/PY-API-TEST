@@ -2,10 +2,10 @@
 import HTMLTestRunnerNew
 # import sys
 import unittest
+import sys
+sys.path.append('./')
 
-# sys.path.append('././././')
-
-from zuoye_022.common import contants
+from zuoye_22.common import contants
 
 discover = unittest.defaultTestLoader.discover(contants.case_dir, "test_*.py")
 

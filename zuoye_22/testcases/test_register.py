@@ -4,11 +4,11 @@ import unittest
 
 from ddt import ddt, data
 
-from zuoye_022.common.log import get_logger
-from zuoye_022.common import contants
-from zuoye_022.common import do_excel
-from zuoye_022.common import do_mysql
-from zuoye_022.common.http_request import HTTPRequest2
+from zuoye_22.common.log import get_logger
+from zuoye_22.common import contants
+from zuoye_22.common import do_excel
+from zuoye_22.common import do_mysql
+from zuoye_22.common.http_request import HTTPRequest2
 
 
 @ddt

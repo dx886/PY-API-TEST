@@ -1,6 +1,6 @@
 import logging
 
-from python_study.zuoye import doconfig
+from python_study.zuoye.zuoye_22.common.config import doconfig
 from python_study.zuoye.zuoye_22.common import contants
 
 

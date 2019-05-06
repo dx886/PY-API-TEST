@@ -3,8 +3,8 @@ import unittest
 
 from ddt import ddt, data
 
-from python_study.zuoye import Context
-from python_study.zuoye import context
+from python_study.zuoye.zuoye_22.common.context import Context
+from python_study.zuoye.zuoye_22.common import context
 from python_study.zuoye.zuoye_22.common import contants
 from python_study.zuoye.zuoye_22.common import do_excel
 from python_study.zuoye.zuoye_22.common import do_mysql

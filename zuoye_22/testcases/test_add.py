@@ -9,7 +9,7 @@ import unittest
 
 from ddt import ddt, data
 
-from python_study.zuoye import context
+from python_study.zuoye.zuoye_22.common import context
 from python_study.zuoye.zuoye_22.common import contants
 from python_study.zuoye.zuoye_22.common import do_excel
 from python_study.zuoye.zuoye_22.common.http_request import HTTPRequest2

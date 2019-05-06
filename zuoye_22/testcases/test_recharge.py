@@ -3,10 +3,10 @@ import unittest
 
 from ddt import ddt, data
 
-from python_study.zuoye.zuoye_22.common.do_mysql import DoMysql
-from python_study.zuoye.zuoye_22.common import contants
-from python_study.zuoye.zuoye_22.common import do_excel
-from python_study.zuoye.zuoye_22.common.http_request import HTTPRequest2
+from zuoye_022.common.do_mysql import DoMysql
+from zuoye_022.common import contants
+from zuoye_022.common import do_excel
+from zuoye_022.common.http_request import HTTPRequest2
 
 
 @ddt

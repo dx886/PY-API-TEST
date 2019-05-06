@@ -1,7 +1,7 @@
 
 import pymysql
 
-from python_study.zuoye.zuoye_22.common.config import doconfig
+from zuoye_022.common.config import doconfig
 
 
 class DoMysql:

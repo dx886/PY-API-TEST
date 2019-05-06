@@ -116,8 +116,8 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">接口请求测试报告</h1>
 <p class='attribute'><strong>测试人员 : </strong> 老王</p>
-<p class='attribute'><strong>开始时间 : </strong> 2019-05-06 10:12:24</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:06.839684</p>
+<p class='attribute'><strong>开始时间 : </strong> 2019-05-06 10:39:16</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:06.614317</p>
 <p class='attribute'><strong>测试结果 : </strong> 共 22，通过 15，失败 2，错误 5，通过率= 68.18%</p>
 
 <p class='description'>接口用例</p>
@@ -169,7 +169,7 @@ function html_escape(s) {
     <pre>
     
 pt1_1: 请求url: http://test.lemonban.com/futureloan/mvc/api/member/login
-请求data: {'mobilephone': '15810447878', 'pwd': '123456'}
+请求data: {'pwd': '123456', 'mobilephone': '15810447878'}
 请求response: {"status":1,"code":"10001","data":null,"msg":"登录成功"}
 
 
@@ -190,14 +190,14 @@ pt1_1: 请求url: http://test.lemonban.com/futureloan/mvc/api/member/login
     <pre>
     
 ft1_2: 请求url: http://test.lemonban.com/futureloan/mvc/api/loan/add
-请求data: {'loanRate': '12.0', 'amount': 20000, 'loanDateType': 0, 'loanTerm': 3, 'title': '试试人品行不行，借个2W玩玩', 'memberId': '1219', 'biddingDays': 5, 'repaymemtWay': 11}
+请求data: {'loanRate': '12.0', 'loanTerm': 3, 'memberId': '1219', 'biddingDays': 5, 'amount': 20000, 'repaymemtWay': 11, 'loanDateType': 0, 'title': '试试人品行不行，借个2W玩玩'}
 请求response: {"status":0,"code":"20105","data":null,"msg":"不存在该会员"}
 Traceback (most recent call last):
   File "C:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
     return func(self, *args, **kwargs)
-  File "C:\Users\86151\PycharmProjects\study\python_study\zuoye\zuoye_22\testcases\test_add.py", line 47, in test_add
+  File "C:\Users\86151\PycharmProjects\study\zuoye_22\testcases\test_add.py", line 47, in test_add
     raise e
-  File "C:\Users\86151\PycharmProjects\study\python_study\zuoye\zuoye_22\testcases\test_add.py", line 43, in test_add
+  File "C:\Users\86151\PycharmProjects\study\zuoye_22\testcases\test_add.py", line 43, in test_add
     self.assertEqual(str(case.expected), resp.json()['code'])
 AssertionError: '10001' != '20105'
 - 10001
@@ -232,7 +232,7 @@ AssertionError: '10001' != '20105'
     
 pt2_1: 测试标题: 管理员正常登录
 请求url: http://test.lemonban.com/futureloan/mvc/api/member/login
-请求data: {'mobilephone': '15814447890', 'pwd': '123456'}
+请求data: {'pwd': '123456', 'mobilephone': '15814447890'}
 请求response: {"status":1,"code":"10001","data":null,"msg":"登录成功"}
 
 
@@ -254,14 +254,14 @@ pt2_1: 测试标题: 管理员正常登录
     
 ft2_2: 测试标题: 管理员加标
 请求url: http://test.lemonban.com/futureloan/mvc/api/loan/add
-请求data: {'loanRate': '12.0', 'amount': 20000, 'loanDateType': 0, 'loanTerm': 3, 'title': '世界这么大，想去看一看', 'memberId': '1219', 'biddingDays': 5, 'repaymemtWay': 11}
+请求data: {'loanRate': '12.0', 'loanTerm': 3, 'memberId': '1219', 'biddingDays': 5, 'amount': 20000, 'repaymemtWay': 11, 'loanDateType': 0, 'title': '世界这么大，想去看一看'}
 请求response: {"status":0,"code":"20105","data":null,"msg":"不存在该会员"}
 Traceback (most recent call last):
   File "C:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
     return func(self, *args, **kwargs)
-  File "C:\Users\86151\PycharmProjects\study\python_study\zuoye\zuoye_22\testcases\test_invest.py", line 54, in test_invest
+  File "C:\Users\86151\PycharmProjects\study\zuoye_22\testcases\test_invest.py", line 54, in test_invest
     raise e
-  File "C:\Users\86151\PycharmProjects\study\python_study\zuoye\zuoye_22\testcases\test_invest.py", line 35, in test_invest
+  File "C:\Users\86151\PycharmProjects\study\zuoye_22\testcases\test_invest.py", line 35, in test_invest
     self.assertEqual(str(case.expected), resp.json()['code'])
 AssertionError: '10001' != '20105'
 - 10001
@@ -289,9 +289,9 @@ ft2_3: 测试标题: 管理员审核
 Traceback (most recent call last):
   File "C:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
     return func(self, *args, **kwargs)
-  File "C:\Users\86151\PycharmProjects\study\python_study\zuoye\zuoye_22\testcases\test_invest.py", line 32, in test_invest
+  File "C:\Users\86151\PycharmProjects\study\zuoye_22\testcases\test_invest.py", line 32, in test_invest
     case.data = context.replace(case.data)
-  File "./././.\python_study\zuoye\zuoye_22\common\context.py", line 26, in replace
+  File "C:\Users\86151\PycharmProjects\study\zuoye_22\common\context.py", line 26, in replace
     data = re.sub(p, v, data, count=1)  # 查找替换,count查找替换的次数
   File "C:\Python34\lib\re.py", line 179, in sub
     return _compile(pattern, flags).sub(repl, string, count)
@@ -326,7 +326,7 @@ TypeError: object of type 'NoneType' has no len()
     
 pt2_4: 测试标题: 投资人正常登录
 请求url: http://test.lemonban.com/futureloan/mvc/api/member/login
-请求data: {'mobilephone': '15810447878', 'pwd': '123456'}
+请求data: {'pwd': '123456', 'mobilephone': '15810447878'}
 请求response: {"status":1,"code":"10001","data":null,"msg":"登录成功"}
 
 
@@ -350,7 +350,7 @@ ft2_5: 测试标题: 投资人正常投资
 Traceback (most recent call last):
   File "C:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
     return func(self, *args, **kwargs)
-  File "C:\Users\86151\PycharmProjects\study\python_study\zuoye\zuoye_22\testcases\test_invest.py", line 28, in test_invest
+  File "C:\Users\86151\PycharmProjects\study\zuoye_22\testcases\test_invest.py", line 28, in test_invest
     print(member['leaveamount'])
 KeyError: 'leaveamount'
 
@@ -375,9 +375,9 @@ ft2_6: 测试标题: 投资人投资不输入金额
 Traceback (most recent call last):
   File "C:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
     return func(self, *args, **kwargs)
-  File "C:\Users\86151\PycharmProjects\study\python_study\zuoye\zuoye_22\testcases\test_invest.py", line 32, in test_invest
+  File "C:\Users\86151\PycharmProjects\study\zuoye_22\testcases\test_invest.py", line 32, in test_invest
     case.data = context.replace(case.data)
-  File "./././.\python_study\zuoye\zuoye_22\common\context.py", line 26, in replace
+  File "C:\Users\86151\PycharmProjects\study\zuoye_22\common\context.py", line 26, in replace
     data = re.sub(p, v, data, count=1)  # 查找替换,count查找替换的次数
   File "C:\Python34\lib\re.py", line 179, in sub
     return _compile(pattern, flags).sub(repl, string, count)
@@ -414,9 +414,9 @@ ft2_7: 测试标题: 投资人投资输入负数
 Traceback (most recent call last):
   File "C:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
     return func(self, *args, **kwargs)
-  File "C:\Users\86151\PycharmProjects\study\python_study\zuoye\zuoye_22\testcases\test_invest.py", line 32, in test_invest
+  File "C:\Users\86151\PycharmProjects\study\zuoye_22\testcases\test_invest.py", line 32, in test_invest
     case.data = context.replace(case.data)
-  File "./././.\python_study\zuoye\zuoye_22\common\context.py", line 26, in replace
+  File "C:\Users\86151\PycharmProjects\study\zuoye_22\common\context.py", line 26, in replace
     data = re.sub(p, v, data, count=1)  # 查找替换,count查找替换的次数
   File "C:\Python34\lib\re.py", line 179, in sub
     return _compile(pattern, flags).sub(repl, string, count)
@@ -459,7 +459,7 @@ TypeError: object of type 'NoneType' has no len()
     <pre>
     
 pt3_1: 请求url: http://test.lemonban.com/futureloan/mvc/api/member/login
-请求data: {'mobilephone': '15810447878', 'pwd': '123456'}
+请求data: {'pwd': '123456', 'mobilephone': '15810447878'}
 请求response: {"status":1,"code":"10001","data":null,"msg":"登录成功"}
 
 
@@ -480,7 +480,7 @@ pt3_1: 请求url: http://test.lemonban.com/futureloan/mvc/api/member/login
     <pre>
     
 pt3_2: 请求url: http://test.lemonban.com/futureloan/mvc/api/member/login
-请求data: {'mobilephone': '15810447878', 'pwd': '098786'}
+请求data: {'pwd': '098786', 'mobilephone': '15810447878'}
 请求response: {"status":0,"code":"20111","data":null,"msg":"用户名或密码错误"}
 
 
@@ -501,7 +501,7 @@ pt3_2: 请求url: http://test.lemonban.com/futureloan/mvc/api/member/login
     <pre>
     
 pt3_3: 请求url: http://test.lemonban.com/futureloan/mvc/api/member/login
-请求data: {'mobilephone': '15810447878', 'pwd': ''}
+请求data: {'pwd': '', 'mobilephone': '15810447878'}
 请求response: {"status":0,"code":"20103","data":null,"msg":"密码不能为空"}
 
 
@@ -522,7 +522,7 @@ pt3_3: 请求url: http://test.lemonban.com/futureloan/mvc/api/member/login
     <pre>
     
 pt3_4: 请求url: http://test.lemonban.com/futureloan/mvc/api/member/login
-请求data: {'mobilephone': '', 'pwd': '123456'}
+请求data: {'pwd': '123456', 'mobilephone': ''}
 请求response: {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
 
 
@@ -553,7 +553,7 @@ pt3_4: 请求url: http://test.lemonban.com/futureloan/mvc/api/member/login
     
 pt4_1: 正常登陆
 请求url: http://test.lemonban.com/futureloan/mvc/api/member/login
-请求data: {'mobilephone': '15810447878', 'pwd': '123456'}
+请求data: {'pwd': '123456', 'mobilephone': '15810447878'}
 请求response: {"status":1,"code":"10001","data":null,"msg":"登录成功"}
 
 
@@ -577,7 +577,7 @@ ft4_2: 正常充值
 Traceback (most recent call last):
   File "C:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
     return func(self, *args, **kwargs)
-  File "C:\Users\86151\PycharmProjects\study\python_study\zuoye\zuoye_22\testcases\test_recharge.py", line 27, in test_recharge
+  File "C:\Users\86151\PycharmProjects\study\zuoye_22\testcases\test_recharge.py", line 27, in test_recharge
     print(member['leaveamount'])
 KeyError: 'leaveamount'
 
@@ -600,7 +600,7 @@ KeyError: 'leaveamount'
     
 pt4_3: 充值手机号码不存在
 请求url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
-请求data: {'mobilephone': '12345677889', 'amount': '101'}
+请求data: {'amount': '101', 'mobilephone': '12345677889'}
 请求response: {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
 
 
@@ -622,7 +622,7 @@ pt4_3: 充值手机号码不存在
     
 pt4_4: 充值金额小数点大于两位
 请求url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
-请求data: {'mobilephone': '15810447878', 'amount': '102.223'}
+请求data: {'amount': '102.223', 'mobilephone': '15810447878'}
 请求response: {"status":0,"code":"20116","data":null,"msg":"输入金额的金额小数不能超过两位"}
 
 
@@ -644,7 +644,7 @@ pt4_4: 充值金额小数点大于两位
     
 pt4_5: 输入负数
 请求url: http://test.lemonban.com/futureloan/mvc/api/member/recharge
-请求data: {'mobilephone': '15810447878', 'amount': '-103'}
+请求data: {'amount': '-103', 'mobilephone': '15810447878'}
 请求response: {"status":0,"code":"20117","data":null,"msg":"请输入范围在0到50万之间的正数金额"}
 
 
@@ -673,10 +673,10 @@ pt4_5: 输入负数
     <div id='div_pt5_1' class="collapse in" align="left">
     <pre>
     
-pt5_1: 2019-05-06 10:12:30,891 -  CASE - INFO - 测试标题:注册成功 - [test_register.py:25 ]
-18999999462
+pt5_1: 2019-05-06 10:39:22,411 -  CASE - INFO - 测试标题:注册成功 - [test_register.py:25 ]
+18999999465
 请求url: http://test.lemonban.com/futureloan/mvc/api/member/register
-请求data: {'mobilephone': '18999998945', 'pwd': '123456'}
+请求data: {'pwd': '123456', 'mobilephone': '18999998576'}
 请求response: {"status":1,"code":"10001","data":null,"msg":"注册成功"}
 
 
@@ -696,10 +696,10 @@ pt5_1: 2019-05-06 10:12:30,891 -  CASE - INFO - 测试标题:注册成功 - [tes
     <div id='div_pt5_2' class="collapse in" align="left">
     <pre>
     
-pt5_2: 2019-05-06 10:12:31,149 -  CASE - INFO - 测试标题:密码为空，注册失败 - [test_register.py:25 ]
-2019-05-06 10:12:31,149 -  CASE - INFO - 测试标题:密码为空，注册失败 - [test_register.py:25 ]
+pt5_2: 2019-05-06 10:39:22,636 -  CASE - INFO - 测试标题:密码为空，注册失败 - [test_register.py:25 ]
+2019-05-06 10:39:22,636 -  CASE - INFO - 测试标题:密码为空，注册失败 - [test_register.py:25 ]
 请求url: http://test.lemonban.com/futureloan/mvc/api/member/register
-请求data: {'mobilephone': '15810447879', 'pwd': ''}
+请求data: {'pwd': '', 'mobilephone': '15810447879'}
 请求response: {"status":0,"code":"20103","data":null,"msg":"密码不能为空"}
 
 
@@ -719,11 +719,11 @@ pt5_2: 2019-05-06 10:12:31,149 -  CASE - INFO - 测试标题:密码为空，注�
     <div id='div_pt5_3' class="collapse in" align="left">
     <pre>
     
-pt5_3: 2019-05-06 10:12:31,294 -  CASE - INFO - 测试标题:手机号码为空，注册失败 - [test_register.py:25 ]
-2019-05-06 10:12:31,294 -  CASE - INFO - 测试标题:手机号码为空，注册失败 - [test_register.py:25 ]
-2019-05-06 10:12:31,294 -  CASE - INFO - 测试标题:手机号码为空，注册失败 - [test_register.py:25 ]
+pt5_3: 2019-05-06 10:39:22,753 -  CASE - INFO - 测试标题:手机号码为空，注册失败 - [test_register.py:25 ]
+2019-05-06 10:39:22,753 -  CASE - INFO - 测试标题:手机号码为空，注册失败 - [test_register.py:25 ]
+2019-05-06 10:39:22,753 -  CASE - INFO - 测试标题:手机号码为空，注册失败 - [test_register.py:25 ]
 请求url: http://test.lemonban.com/futureloan/mvc/api/member/register
-请求data: {'mobilephone': '', 'pwd': '123458'}
+请求data: {'pwd': '123458', 'mobilephone': ''}
 请求response: {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
 
 
@@ -743,12 +743,12 @@ pt5_3: 2019-05-06 10:12:31,294 -  CASE - INFO - 测试标题:手机号码为空�
     <div id='div_pt5_4' class="collapse in" align="left">
     <pre>
     
-pt5_4: 2019-05-06 10:12:31,427 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
-2019-05-06 10:12:31,427 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
-2019-05-06 10:12:31,427 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
-2019-05-06 10:12:31,427 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
+pt5_4: 2019-05-06 10:39:22,883 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
+2019-05-06 10:39:22,883 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
+2019-05-06 10:39:22,883 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
+2019-05-06 10:39:22,883 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
 请求url: http://test.lemonban.com/futureloan/mvc/api/member/register
-请求data: {'mobilephone': '15810447878', 'pwd': '123459'}
+请求data: {'pwd': '123459', 'mobilephone': '15810447878'}
 请求response: {"status":0,"code":"20110","data":null,"msg":"手机号码已被注册"}
 上诉校验成功
 

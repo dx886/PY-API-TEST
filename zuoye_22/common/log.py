@@ -1,7 +1,7 @@
 import logging
 
-from python_study.zuoye.zuoye_22.common.config import doconfig
-from python_study.zuoye.zuoye_22.common import contants
+from zuoye_022.common.config import doconfig
+from zuoye_022.common import contants
 
 
 def get_logger(name):

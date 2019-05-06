@@ -3,12 +3,12 @@ import unittest
 
 from ddt import ddt, data
 
-from python_study.zuoye.zuoye_22.common.context import Context
-from python_study.zuoye.zuoye_22.common import context
-from python_study.zuoye.zuoye_22.common import contants
-from python_study.zuoye.zuoye_22.common import do_excel
-from python_study.zuoye.zuoye_22.common import do_mysql
-from python_study.zuoye.zuoye_22.common.http_request import HTTPRequest2
+from zuoye_022.common.context import Context
+from zuoye_022.common import context
+from zuoye_022.common import contants
+from zuoye_022.common import do_excel
+from zuoye_022.common import do_mysql
+from zuoye_022.common.http_request import HTTPRequest2
 
 
 @ddt

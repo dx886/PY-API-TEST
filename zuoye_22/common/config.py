@@ -1,7 +1,7 @@
 
 import configparser
 
-from python_study.zuoye.zuoye_22.common import contants
+from zuoye_022.common import contants
 
 class ReadConfig:
     def __init__(self):

@@ -162,3 +162,64 @@
 2019-05-06 09:34:15,915 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
 2019-05-06 09:34:15,915 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
 2019-05-06 09:34:15,915 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
+2019-05-06 09:38:53,403 -  case - INFO - 测试开始啦 - [log.py:28 ]
+2019-05-06 09:38:53,518 -  case - ERROR - 测试报错 - [log.py:29 ]
+2019-05-06 09:38:53,518 -  case - INFO - 测试结束 - [log.py:31 ]
+2019-05-06 09:38:53,718 -  CASE - INFO - 测试后置处理 - [test_register.py:43 ]
+2019-05-06 09:48:37,914 -  case - INFO - 测试开始啦 - [log.py:28 ]
+2019-05-06 09:48:37,917 -  case - ERROR - 测试报错 - [log.py:29 ]
+2019-05-06 09:48:37,918 -  case - INFO - 测试结束 - [log.py:31 ]
+2019-05-06 09:48:37,963 -  CASE - INFO - 测试后置处理 - [test_register.py:43 ]
+2019-05-06 09:48:43,775 -  CASE - INFO - 测试标题:注册成功 - [test_register.py:25 ]
+2019-05-06 09:48:43,775 -  CASE - INFO - 测试标题:注册成功 - [test_register.py:25 ]
+2019-05-06 09:48:43,988 -  CASE - ERROR - 报错了，'{"status":1,"code":"10001","data":null,"msg":"注册成功"}' != '{"status":0,"code":"20110","data":null,"msg":"手机号码已被注册"}'
+- {"status":1,"code":"10001","data":null,"msg":"注册成功"}
+?           ^           ---                       --
++ {"status":0,"code":"20110","data":null,"msg":"手机号码已被注册"}
+?           ^         +++                       ++++++
+ - [test_register.py:41 ]
+2019-05-06 09:48:43,988 -  CASE - ERROR - 报错了，'{"status":1,"code":"10001","data":null,"msg":"注册成功"}' != '{"status":0,"code":"20110","data":null,"msg":"手机号码已被注册"}'
+- {"status":1,"code":"10001","data":null,"msg":"注册成功"}
+?           ^           ---                       --
++ {"status":0,"code":"20110","data":null,"msg":"手机号码已被注册"}
+?           ^         +++                       ++++++
+ - [test_register.py:41 ]
+2019-05-06 09:48:43,988 -  CASE - ERROR - 报错了，'{"status":1,"code":"10001","data":null,"msg":"注册成功"}' != '{"status":0,"code":"20110","data":null,"msg":"手机号码已被注册"}'
+- {"status":1,"code":"10001","data":null,"msg":"注册成功"}
+?           ^           ---                       --
++ {"status":0,"code":"20110","data":null,"msg":"手机号码已被注册"}
+?           ^         +++                       ++++++
+ - [test_register.py:41 ]
+2019-05-06 09:48:43,991 -  CASE - INFO - 测试标题:密码为空，注册失败 - [test_register.py:25 ]
+2019-05-06 09:48:43,991 -  CASE - INFO - 测试标题:密码为空，注册失败 - [test_register.py:25 ]
+2019-05-06 09:48:43,991 -  CASE - INFO - 测试标题:密码为空，注册失败 - [test_register.py:25 ]
+2019-05-06 09:48:43,991 -  CASE - INFO - 测试标题:密码为空，注册失败 - [test_register.py:25 ]
+2019-05-06 09:48:44,105 -  CASE - INFO - 测试标题:手机号码为空，注册失败 - [test_register.py:25 ]
+2019-05-06 09:48:44,105 -  CASE - INFO - 测试标题:手机号码为空，注册失败 - [test_register.py:25 ]
+2019-05-06 09:48:44,105 -  CASE - INFO - 测试标题:手机号码为空，注册失败 - [test_register.py:25 ]
+2019-05-06 09:48:44,105 -  CASE - INFO - 测试标题:手机号码为空，注册失败 - [test_register.py:25 ]
+2019-05-06 09:48:44,105 -  CASE - INFO - 测试标题:手机号码为空，注册失败 - [test_register.py:25 ]
+2019-05-06 09:48:44,231 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
+2019-05-06 09:48:44,231 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
+2019-05-06 09:48:44,231 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
+2019-05-06 09:48:44,231 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
+2019-05-06 09:48:44,231 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
+2019-05-06 09:48:44,231 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
+2019-05-06 10:12:24,638 -  case - INFO - 测试开始啦 - [log.py:28 ]
+2019-05-06 10:12:24,642 -  case - ERROR - 测试报错 - [log.py:29 ]
+2019-05-06 10:12:24,663 -  case - INFO - 测试结束 - [log.py:31 ]
+2019-05-06 10:12:24,712 -  CASE - INFO - 测试后置处理 - [test_register.py:43 ]
+2019-05-06 10:12:30,891 -  CASE - INFO - 测试标题:注册成功 - [test_register.py:25 ]
+2019-05-06 10:12:30,891 -  CASE - INFO - 测试标题:注册成功 - [test_register.py:25 ]
+2019-05-06 10:12:31,149 -  CASE - INFO - 测试标题:密码为空，注册失败 - [test_register.py:25 ]
+2019-05-06 10:12:31,149 -  CASE - INFO - 测试标题:密码为空，注册失败 - [test_register.py:25 ]
+2019-05-06 10:12:31,149 -  CASE - INFO - 测试标题:密码为空，注册失败 - [test_register.py:25 ]
+2019-05-06 10:12:31,294 -  CASE - INFO - 测试标题:手机号码为空，注册失败 - [test_register.py:25 ]
+2019-05-06 10:12:31,294 -  CASE - INFO - 测试标题:手机号码为空，注册失败 - [test_register.py:25 ]
+2019-05-06 10:12:31,294 -  CASE - INFO - 测试标题:手机号码为空，注册失败 - [test_register.py:25 ]
+2019-05-06 10:12:31,294 -  CASE - INFO - 测试标题:手机号码为空，注册失败 - [test_register.py:25 ]
+2019-05-06 10:12:31,427 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
+2019-05-06 10:12:31,427 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
+2019-05-06 10:12:31,427 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
+2019-05-06 10:12:31,427 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
+2019-05-06 10:12:31,427 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]

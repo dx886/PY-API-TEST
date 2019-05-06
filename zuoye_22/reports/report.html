@@ -116,8 +116,8 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">接口请求测试报告</h1>
 <p class='attribute'><strong>测试人员 : </strong> 老王</p>
-<p class='attribute'><strong>开始时间 : </strong> 2019-05-06 09:34:08</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:07.075084</p>
+<p class='attribute'><strong>开始时间 : </strong> 2019-05-06 10:12:24</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:06.839684</p>
 <p class='attribute'><strong>测试结果 : </strong> 共 22，通过 15，失败 2，错误 5，通过率= 68.18%</p>
 
 <p class='description'>接口用例</p>
@@ -190,7 +190,7 @@ pt1_1: 请求url: http://test.lemonban.com/futureloan/mvc/api/member/login
     <pre>
     
 ft1_2: 请求url: http://test.lemonban.com/futureloan/mvc/api/loan/add
-请求data: {'loanDateType': 0, 'loanRate': '12.0', 'loanTerm': 3, 'repaymemtWay': 11, 'amount': 20000, 'title': '试试人品行不行，借个2W玩玩', 'memberId': '1219', 'biddingDays': 5}
+请求data: {'loanRate': '12.0', 'amount': 20000, 'loanDateType': 0, 'loanTerm': 3, 'title': '试试人品行不行，借个2W玩玩', 'memberId': '1219', 'biddingDays': 5, 'repaymemtWay': 11}
 请求response: {"status":0,"code":"20105","data":null,"msg":"不存在该会员"}
 Traceback (most recent call last):
   File "C:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
@@ -254,7 +254,7 @@ pt2_1: 测试标题: 管理员正常登录
     
 ft2_2: 测试标题: 管理员加标
 请求url: http://test.lemonban.com/futureloan/mvc/api/loan/add
-请求data: {'loanDateType': 0, 'loanRate': '12.0', 'loanTerm': 3, 'repaymemtWay': 11, 'amount': 20000, 'title': '世界这么大，想去看一看', 'memberId': '1219', 'biddingDays': 5}
+请求data: {'loanRate': '12.0', 'amount': 20000, 'loanDateType': 0, 'loanTerm': 3, 'title': '世界这么大，想去看一看', 'memberId': '1219', 'biddingDays': 5, 'repaymemtWay': 11}
 请求response: {"status":0,"code":"20105","data":null,"msg":"不存在该会员"}
 Traceback (most recent call last):
   File "C:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
@@ -291,7 +291,7 @@ Traceback (most recent call last):
     return func(self, *args, **kwargs)
   File "C:\Users\86151\PycharmProjects\study\python_study\zuoye\zuoye_22\testcases\test_invest.py", line 32, in test_invest
     case.data = context.replace(case.data)
-  File "C:\Users\86151\PycharmProjects\study\python_study\zuoye\zuoye_22\common\context.py", line 26, in replace
+  File "./././.\python_study\zuoye\zuoye_22\common\context.py", line 26, in replace
     data = re.sub(p, v, data, count=1)  # 查找替换,count查找替换的次数
   File "C:\Python34\lib\re.py", line 179, in sub
     return _compile(pattern, flags).sub(repl, string, count)
@@ -377,7 +377,7 @@ Traceback (most recent call last):
     return func(self, *args, **kwargs)
   File "C:\Users\86151\PycharmProjects\study\python_study\zuoye\zuoye_22\testcases\test_invest.py", line 32, in test_invest
     case.data = context.replace(case.data)
-  File "C:\Users\86151\PycharmProjects\study\python_study\zuoye\zuoye_22\common\context.py", line 26, in replace
+  File "./././.\python_study\zuoye\zuoye_22\common\context.py", line 26, in replace
     data = re.sub(p, v, data, count=1)  # 查找替换,count查找替换的次数
   File "C:\Python34\lib\re.py", line 179, in sub
     return _compile(pattern, flags).sub(repl, string, count)
@@ -416,7 +416,7 @@ Traceback (most recent call last):
     return func(self, *args, **kwargs)
   File "C:\Users\86151\PycharmProjects\study\python_study\zuoye\zuoye_22\testcases\test_invest.py", line 32, in test_invest
     case.data = context.replace(case.data)
-  File "C:\Users\86151\PycharmProjects\study\python_study\zuoye\zuoye_22\common\context.py", line 26, in replace
+  File "./././.\python_study\zuoye\zuoye_22\common\context.py", line 26, in replace
     data = re.sub(p, v, data, count=1)  # 查找替换,count查找替换的次数
   File "C:\Python34\lib\re.py", line 179, in sub
     return _compile(pattern, flags).sub(repl, string, count)
@@ -673,10 +673,10 @@ pt4_5: 输入负数
     <div id='div_pt5_1' class="collapse in" align="left">
     <pre>
     
-pt5_1: 2019-05-06 09:34:15,443 -  CASE - INFO - 测试标题:注册成功 - [test_register.py:25 ]
+pt5_1: 2019-05-06 10:12:30,891 -  CASE - INFO - 测试标题:注册成功 - [test_register.py:25 ]
 18999999462
 请求url: http://test.lemonban.com/futureloan/mvc/api/member/register
-请求data: {'mobilephone': '18999999053', 'pwd': '123456'}
+请求data: {'mobilephone': '18999998945', 'pwd': '123456'}
 请求response: {"status":1,"code":"10001","data":null,"msg":"注册成功"}
 
 
@@ -696,8 +696,8 @@ pt5_1: 2019-05-06 09:34:15,443 -  CASE - INFO - 测试标题:注册成功 - [tes
     <div id='div_pt5_2' class="collapse in" align="left">
     <pre>
     
-pt5_2: 2019-05-06 09:34:15,680 -  CASE - INFO - 测试标题:密码为空，注册失败 - [test_register.py:25 ]
-2019-05-06 09:34:15,680 -  CASE - INFO - 测试标题:密码为空，注册失败 - [test_register.py:25 ]
+pt5_2: 2019-05-06 10:12:31,149 -  CASE - INFO - 测试标题:密码为空，注册失败 - [test_register.py:25 ]
+2019-05-06 10:12:31,149 -  CASE - INFO - 测试标题:密码为空，注册失败 - [test_register.py:25 ]
 请求url: http://test.lemonban.com/futureloan/mvc/api/member/register
 请求data: {'mobilephone': '15810447879', 'pwd': ''}
 请求response: {"status":0,"code":"20103","data":null,"msg":"密码不能为空"}
@@ -719,9 +719,9 @@ pt5_2: 2019-05-06 09:34:15,680 -  CASE - INFO - 测试标题:密码为空，注�
     <div id='div_pt5_3' class="collapse in" align="left">
     <pre>
     
-pt5_3: 2019-05-06 09:34:15,796 -  CASE - INFO - 测试标题:手机号码为空，注册失败 - [test_register.py:25 ]
-2019-05-06 09:34:15,796 -  CASE - INFO - 测试标题:手机号码为空，注册失败 - [test_register.py:25 ]
-2019-05-06 09:34:15,796 -  CASE - INFO - 测试标题:手机号码为空，注册失败 - [test_register.py:25 ]
+pt5_3: 2019-05-06 10:12:31,294 -  CASE - INFO - 测试标题:手机号码为空，注册失败 - [test_register.py:25 ]
+2019-05-06 10:12:31,294 -  CASE - INFO - 测试标题:手机号码为空，注册失败 - [test_register.py:25 ]
+2019-05-06 10:12:31,294 -  CASE - INFO - 测试标题:手机号码为空，注册失败 - [test_register.py:25 ]
 请求url: http://test.lemonban.com/futureloan/mvc/api/member/register
 请求data: {'mobilephone': '', 'pwd': '123458'}
 请求response: {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
@@ -743,10 +743,10 @@ pt5_3: 2019-05-06 09:34:15,796 -  CASE - INFO - 测试标题:手机号码为空�
     <div id='div_pt5_4' class="collapse in" align="left">
     <pre>
     
-pt5_4: 2019-05-06 09:34:15,915 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
-2019-05-06 09:34:15,915 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
-2019-05-06 09:34:15,915 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
-2019-05-06 09:34:15,915 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
+pt5_4: 2019-05-06 10:12:31,427 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
+2019-05-06 10:12:31,427 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
+2019-05-06 10:12:31,427 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
+2019-05-06 10:12:31,427 -  CASE - INFO - 测试标题:重复注册 - [test_register.py:25 ]
 请求url: http://test.lemonban.com/futureloan/mvc/api/member/register
 请求data: {'mobilephone': '15810447878', 'pwd': '123459'}
 请求response: {"status":0,"code":"20110","data":null,"msg":"手机号码已被注册"}
